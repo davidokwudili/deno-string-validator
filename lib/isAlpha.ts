@@ -1,7 +1,7 @@
-import assertString from './utils/assertString.ts';
-import { alpha } from './alpha.ts';
+import assertString from "./utils/assertString.ts";
+import { alpha } from "./alpha.ts";
 
-export default function isAlpha(str: string, locale = 'en-US') {
+export default function isAlpha(str: string, locale = "en-US") {
   assertString(str);
   if (locale in alpha) {
     return alpha[locale].test(str);

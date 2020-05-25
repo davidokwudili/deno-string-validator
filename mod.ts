@@ -1,8 +1,8 @@
 // validators
-import isAlpha, { locales as isAlphaLocales } from './lib/isAlpha.ts';
+import isAlpha, { locales as isAlphaLocales } from "./lib/isAlpha.ts";
 
 const validator: any = {
-    isAlpha
-}
-  
+  isAlpha,
+};
+
 export default validator;
