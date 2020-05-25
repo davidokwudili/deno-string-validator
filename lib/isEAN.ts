@@ -8,7 +8,7 @@
  * Reference: https://en.wikipedia.org/wiki/International_Article_Number
  */
 
-import assertString from "./util/assertString.ts";
+import assertString from "./utils/assertString.ts";
 /**
  * Define EAN Lenghts; 8 for EAN-8; 13 for EAN-13
  * and Regular Expression for valid EANs (EAN-8, EAN-13),

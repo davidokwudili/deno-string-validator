@@ -1,11 +1,11 @@
-import assertString from "./util/assertString.ts";
+import assertString from "./utils/assertString.ts";
 
 /**
  * List of country codes with
  * corresponding IBAN regular expression
  * Reference: https://en.wikipedia.org/wiki/International_Bank_Account_Number
  */
-const ibanRegexThroughCountryCode = {
+const ibanRegexThroughCountryCode: any = {
   AD: /^(AD[0-9]{2})\d{8}[A-Z0-9]{12}$/,
   AE: /^(AE[0-9]{2})\d{3}\d{16}$/,
   AL: /^(AL[0-9]{2})\d{8}[A-Z0-9]{16}$/,

@@ -1,4 +1,4 @@
-import assertString from "./util/assertString.ts";
+import assertString from "./utils/assertString.ts";
 
 import blacklist from "./blacklist.ts";
 

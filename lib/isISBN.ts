@@ -1,10 +1,10 @@
-import assertString from "./util/assertString.ts";
+import assertString from "./utils/assertString.ts";
 
 const isbn10Maybe = /^(?:[0-9]{9}X|[0-9]{10})$/;
 const isbn13Maybe = /^(?:[0-9]{13})$/;
 const factor = [1, 3];
 
-export default function isISBN(str: any, version: any = "") {
+export default function isISBN(str: any, version: any = ""): boolean {
   assertString(str);
   version = String(version);
   if (!version) {

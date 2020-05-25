@@ -1,4 +1,4 @@
-import assertString from "./util/assertString.ts";
+import assertString from "./utils/assertString.ts";
 
 const hexadecimal = /^(0x|0h)?[0-9A-F]+$/i;
 

@@ -1,4 +1,4 @@
-import assertString from "./util/assertString.ts";
+import assertString from "./utils/assertString.ts";
 
 /* eslint-disable prefer-rest-params */
 export default function isLength(

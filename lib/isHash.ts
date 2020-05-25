@@ -1,6 +1,6 @@
-import assertString from "./util/assertString.ts";
+import assertString from "./utils/assertString.ts";
 
-const lengths = {
+const lengths: any = {
   md5: 32,
   md4: 32,
   sha1: 40,

@@ -1,4 +1,4 @@
-import assertString from "./util/assertString.ts";
+import assertString from "./utils/assertString.ts";
 
 export default function unescape(str: string) {
   assertString(str);

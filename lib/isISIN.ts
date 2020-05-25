@@ -1,4 +1,4 @@
-import assertString from "./util/assertString.ts";
+import assertString from "./utils/assertString.ts";
 
 const isin = /^[A-Z]{2}[0-9A-Z]{9}[0-9]$/;
 
@@ -10,7 +10,7 @@ export default function isISIN(str: any) {
 
   const checksumStr = str.replace(
     /[A-Z]/g,
-    (character) => (parseInt(character, 36)),
+    (character: any) => (parseInt(character, 36)),
   );
 
   let sum = 0;

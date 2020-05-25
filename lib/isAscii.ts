@@ -1,4 +1,4 @@
-import assertString from "./util/assertString.ts";
+import assertString from "./utils/assertString.ts";
 
 const ascii: RegExp = /^[\x00-\x7F]+$/;
 

@@ -1,12 +1,12 @@
-import assertString from "./util/assertString.ts";
+import assertString from "./utils/assertString.ts";
 
-const validators = {
+const validators: any = {
   ES: (str: string) => {
     assertString(str);
 
     const DNI = /^[0-9X-Z][0-9]{7}[TRWAGMYFPDXBNJZSQVHLCKE]$/;
 
-    const charsValue = {
+    const charsValue: any = {
       X: 0,
       Y: 1,
       Z: 2,
@@ -54,7 +54,7 @@ const validators = {
 
     return sanitized.endsWith(controlDigits[number % 23]);
   },
-  "he-IL": (str) => {
+  "he-IL": (str: string) => {
     const DNI = /^\d{9}$/;
 
     // sanitize user input
@@ -75,7 +75,7 @@ const validators = {
     }
     return sum % 10 === 0;
   },
-  "ar-TN": (str) => {
+  "ar-TN": (str: string) => {
     const DNI = /^\d{8}$/;
 
     // sanitize user input
@@ -87,8 +87,8 @@ const validators = {
     }
     return true;
   },
-  "zh-CN": (str) => {
-    const provinceAndCitys = {
+  "zh-CN": (str: string) => {
+    const provinceAndCitys: any = {
       11: "北京",
       12: "天津",
       13: "河北",
@@ -155,7 +155,7 @@ const validators = {
       return !!provinceAndCitys[Number.parseInt(addressCode.substring(0, 2))];
     };
 
-    const checkBirthDayCode = (birDayCode) => {
+    const checkBirthDayCode = (birDayCode: string) => {
       let check =
         /^[1-9]\d{3}((0[1-9])|(1[0-2]))((0[1-9])|([1-2][0-9])|(3[0-1]))$/.test(
           birDayCode,
@@ -234,7 +234,7 @@ const validators = {
     return checkIdCardNo(str);
   },
   "zh-TW": (str: string) => {
-    const ALPHABET_CODES = {
+    const ALPHABET_CODES: any = {
       A: 10,
       B: 11,
       C: 12,

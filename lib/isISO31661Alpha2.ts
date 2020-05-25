@@ -1,5 +1,5 @@
-import assertString from "./util/assertString.ts";
-import includes from "./util/includes.ts";
+import assertString from "./utils/assertString.ts";
+import includes from "./utils/includes.ts";
 
 // from https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2
 const validISO31661Alpha2CountriesCodes: Array<string> = [

@@ -1,4 +1,4 @@
-import assertString from "./util/assertString.ts";
+import assertString from "./utils/assertString.ts";
 
 const base32: RegExp = /^[A-Z2-7]+=*$/;
 

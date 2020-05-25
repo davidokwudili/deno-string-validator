@@ -1,15 +1,15 @@
-import assertString from "./util/assertString.ts";
+import assertString from "./utils/assertString.ts";
 import { decimal } from "./alpha.ts";
 
 export default function isFloat(
   str: string,
   options: {
-    locale?: any;
-    hasOwnProperty?: any;
     min?: any;
     max?: any;
     lt?: any;
     gt?: any;
+    locale?: any;
+    hasOwnProperty?: any;
   },
 ) {
   assertString(str);

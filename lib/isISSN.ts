@@ -1,4 +1,4 @@
-import assertString from "./util/assertString.ts";
+import assertString from "./utils/assertString.ts";
 
 const issn = "^\\d{4}-?\\d{3}[\\dX]$";
 
