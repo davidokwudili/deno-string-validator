@@ -1,12 +1,12 @@
-// validators
+// deno validators
 import isAlpha, { locales as isAlphaLocales } from "./lib/isAlpha.ts";
 
-// validator version
+// deno validator version
 const version = "0.0.1";
 
 const validator: any = {
   isAlpha,
-  isAlphaLocales
+  isAlphaLocales,
 };
 
 export default validator;
